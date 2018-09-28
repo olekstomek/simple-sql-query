@@ -1,0 +1,2 @@
+#7. Samochód (idauta, marka, model), który został najwcześniej wypożyczony (decyduje datawyp)
+SELECT a.idauta, marka, model FROM auta AS a, wypozyczenia AS w WHERE a.idauta = w.idauta ORDER BY w.datawyp ASC LIMIT 1;
